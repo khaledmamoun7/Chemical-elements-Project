@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elements names & symbols</title>
+    <link rel="stylesheet" href="css/Elements names & symbols style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href=""><span>Home</span></a>
+        <a class="nvlinks" id="es" href=""><span>Elements names & symbols</span></a>
+        <a class="nvlinks" href="Elemets properties.html"><span>Elements properties</span></a>
+   </div>
+   <div id="container">
+        <div id="inps">
+            <input onkeyup="searchData(this.value)" type="text" placeholder="Search by name in Arabic(البحث بواسطة الاسم في العربية)" id="search">
+            <button onclick="modType(this.id)" id="nSearch">Search by atomic number(البحث بالعدد الذري)</button>
+            <button onclick="modType(this.id)" id="sSearch">Search by symbol(البحث بالرمز)</button>
+            <button onclick="modType(this.id)" id="enSearch">Search by name in English</button>
+            <button onclick="modType(this.id)" id="arSearch">البحث بواسطة الاسم في العربية</button>
+        </div>
+    <table>
+        <tr>
+            <th>Atomic number(العدد الذري)</th>
+            <th>Symbol(الرمز)</th>
+            <th>Name in English(الاسم بالانجليزية)</th>
+            <th>Name in Arabic(الاسم بالعربية)</th>
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+   </div>
+
+    <script src="js/database.js"></script>
+    <script src="js/Elements names & symbols main.js"></script>
+</body>
+</html>

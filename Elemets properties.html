@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elemets properties</title>
+    <link rel="stylesheet" href="css/Element properties style.css">
+</head>
+<body>
+    <!-- <header><h1>Chemical Elements</h1></header> -->
+    
+        <div id="navbar">
+             <a href=""><span>Home</span></a>
+             <a class="nvlinks" href="Elements names & symbols.html"><span>Elements names & symbols</span></a>
+             <a class="nvlinks" id="ep" href=""><span>Elements properties</span></a>
+        </div>
+    <div id="container">
+
+        <div id="inputs">
+            <input type="text" onkeyup="showData(this.value)" id="inp" placeholder="Element symbol(first letter should be CAPITAL)">
+        </div>
+        <div id="table">
+            <table>
+                <tr>
+                    <td class="head1">(الاسم بالانجليزية)The name in English :</td>
+                    <td id="name_en"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(الاسم بالعربية)The name in Arabic :</td>
+                    <td id="name_ar"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(العدد الذري)Atomic number :</td>
+                    <td id="an"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(الكتلة الذرية)Atomic mass :</td>
+                    <td id="am"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(درجة الإنصهار)Melting point :</td>
+                    <td id="mp"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(درجة الغليان)Boiling point :</td>
+                    <td id="bp"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(تاريخ الاكتشاف)Discovery date :</td>
+                    <td id="dd"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(اكتشف بواسطة)Discovered by :</td>
+                    <td id="db"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(تصنيف العنصر)Element classification :</td>
+                    <td id="ec"></td>
+                </tr>
+                <tr>
+                    <td class="head1">(ويكيبديا)Wikipedia :</td>
+                    <td id="wi"></td>
+                </tr>
+            </table>
+        </div>
+        <img src="photos/Simple_Periodic_Table_Chart-blocks.svg.png" alt="photo">
+    </div>
+    <script src="js/database.js"></script>
+    <script src="js/Elements properties main.js"></script>  
+</body>
+</html>
